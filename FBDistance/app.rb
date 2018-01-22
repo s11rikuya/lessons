@@ -15,12 +15,12 @@ class History
   include PointCalculation
 end
 
-rikuya = History.new()
+my_history = History.new()
 from_time = Time.parse('2017/01/01 00:00:00')
 to_time = Time.parse('2018/01/01 00:00:00')
-data_indexs = rikuya.getData()
-p range_indexs = rikuya.filter(data_indexs,from_time,to_time)
+data_indexs = my_history.getData()
+p range_indexs = my_history.filter(data_indexs,from_time,to_time)
 count_point = range_indexs.size
-sum_distance = rikuya.culculation(range_indexs)
+sum_distance = my_history.culculation(range_indexs)
 puts "チェックイン数:#{count_point}"
 puts "あなたの今年の総移動距離は#{sum_distance}kmです。"
