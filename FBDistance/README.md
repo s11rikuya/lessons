@@ -1,7 +1,5 @@
 FaceBookDistanceGetter
 ====
-
-Overview
 指定した期間の総距離を計算するアプリ
 
 ## Description
